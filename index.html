@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("57gL6_qZJlRgeEsWG");
+        })();
+    </script>
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Nick</a>
+                <a href="#">Jhonny</a>
             </div>
             <nav id="nav">
                 <ul>
@@ -37,14 +43,17 @@
             <div class="contenedor-img">
                 <img src="img/hero.png" alt="">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>Jhonny Sota</h1>
+            <h2>Developer - Full Stack</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100001123840740" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                <a href="https://github.com/jhonnysota"><i class="fa-brands fa-github" target="_blank"></i></a>
+                
+                <a href="https://www.linkedin.com/in/jhonny-sota-bautista-21288314b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+51942223465&text=Hola%20acabo%20de%20ver%20tu%20pagina,%20y%20deseo%20trabajar%20contigo."><i class="fa-brands fa-whatsapp"></i>
+                </a>
+
             </div>
         </div>
     </section>
@@ -53,7 +62,11 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <p><span>Hola, soy Jhonny sota.</span>
+                Tengo experiencia de desarrollador, Me considero una
+                persona autodidacta y de rápido aprendizaje, me gusta
+                trabajar en en equipo y poder seguir aprendiendo mas.
+            </p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -62,15 +75,15 @@
                     <ul>
                         <li>
                             <strong>Cumpleaños</strong>
-                            15-01-1980
+                            07-08-1996
                         </li>
                         <li>
                             <strong>Teléfono</strong>
-                            2555 5454545
+                            +51 942-223-465
                         </li>
                         <li>
                             <strong>Email</strong>
-                            cw@example.com
+                            jhonnysota67@gmail.com ~ jhonny0712@gmail.com
                         </li>
                         <li>
                             <strong>Website</strong>
@@ -78,11 +91,11 @@
                         </li>
                         <li>
                             <strong>Dirección</strong>
-                            123 San Luis, Argentina
+                            Lima - San Martin de Porres
                         </li>
                         <li>
                             <strong>Cargo</strong>
-                            <span>FREELANCE</span>
+                            <span>Developer Web</span>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +118,7 @@
                         </div>
                         <div class="interes">
                             <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
+                            <span>APPLE</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-person-hiking"></i>
@@ -127,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            <button>
+            <button id="descargarCV">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
@@ -159,15 +172,15 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Photoshop</span>
+                        <span>React Js y Redux </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>95%</span>
+                                <span>75%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Wordpress</span>
+                        <span>Java 8 - Spring boot</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>81%</span>
@@ -175,14 +188,41 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Drupa</span>
+                        <span>My SQL</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>55%</span>
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>SQL server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Booststrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AWS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Professional Skills -->
                 <div class="col">
                     <h3>Professional Skills</h3>
@@ -206,7 +246,7 @@
                         <span>Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>99%</span>
+                                <span>95%</span>
                             </div>
                         </div>
                     </div>
@@ -214,7 +254,7 @@
                         <span>Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>65%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
@@ -239,59 +279,118 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Computacion e Informatica</h4>
+                        <span class="casa"> CIBERTEC S.A.C</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>La carrera de Computación e Informática en Cibertec brinda formación integral en tecnologías de la información. Enfocada en programación, desarrollo de software, bases de datos, redes y seguridad informática, prepara a los estudiantes para afrontar desafíos en el campo tecnológico.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Ensamblaje de  Computacion</h4>
+                        <span class="casa">Telesup</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>La carrera de Ensamblaje de Computadoras se enfoca en la construcción y mantenimiento de sistemas informáticos, brindando habilidades en ensamblaje de hardware, diagnóstico de fallas y configuración de componentes. Prepara a los estudiantes para roles especializados en tecnología y informática.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Curso Profesional de JavaScript</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2022</span>
+                        <p></p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Asincronismo con JavaScript</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2022</span>
+                        <p> </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                <div class="item izq">
+                    <h4>Curso de ECMAScript 6</h4>
+                    <span class="casa">Platzi</span>
+                    <span class="fecha">2022</span>
+                    <p> </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
                     </div>
                 </div>
+                <div class="item izq">
+                    <h4>Spring Framework & Spring Boot desde cero a experto
+                    </h4>
+                    <span class="casa">Udemy</span>
+                    <span class="fecha">2023</span>
+                    <p> </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>React: De cero a experto ( Hooks y MERN )
+                    </h4>
+                    <span class="casa">Udemy</span>
+                    <span class="fecha">2023</span>
+                    <p> </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+
 
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Web Developer</h4>
+                        <span class="casa">RALITECH</span>
+                        <span class="fecha">2020 - 6 meses</span>
+                        <p>Me he encargado de desarrollar la página oficial de su empresa, empleando
+                            tecnologías como HTML5, CSS3 y JavaScript
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Full Stack</h4>
+                        <span class="casa">AMAZONTIC S.A.C</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>En un proyecto ReactJS y TypeScript, se emplearon Hooks para gestionar el estado, con un enfoque asincrónico para mejorar la eficiencia. Git y GitHub, junto con Azure DevOps, se utilizaron para el control de versiones. Se implementó Redux para gestionar el estado global, y Node.js como entorno de ejecución.
+                            La configuración y optimización del servidor SQL Server contribuyeron a un rendimiento óptimo. Se destacó la implementación exitosa del módulo de informes, que incluyó la exportación a Excel y consultas directas a la base de datos con SQL Server. Este enfoque tecnológico logró una solución eficiente y robusta.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Web Developer</h4>
+                        <span class="casa">GESTION HUMANA DE INNOVACION Y TECNOLOGIA SPA</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>
+                            Lideré la implementación de mejoras y la introducción de nuevas funcionalidades en tres proyectos críticos para el Banco BICE. Utilicé tecnologías de vanguardia, incluyendo Java, el framework Spring Boot, Spring Tool 4, Microsoft SQL Server, y la consola de administración WebLogic Server 12c.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Programador de Sistema</h4>
+                        <span class="casa">COLEGIOS PERUANOS (INNOVA SCHOOLS)</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>
+                            Me he destacado en el mantenimiento y mejora de la aplicación DataManagement,
+                            implementando nuevas funcionalidades. Además, lideré mejoras en TRC y TOP.
+                            Poseo experiencia en consultas con SOAPUI y Postman, pruebas de rendimiento con
+                            JMeter, actualización de datos en el CRM Oracle y generación de informes. También
+                            tengo conocimientos básicos en AWS. Estas habilidades han contribuido a mi
+                            desarrollo integral en tecnologías de la información. </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -304,50 +403,38 @@
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2>PORTAFOLIO</h2>
             <div class="galeria">
+                
+           <a href="https://www.100fragancias.com/web5/paginas/index.php" target="_blank">
                 <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
+                    <img src="img/cienFragancia.png" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Cien Fragancias</h3>
+                        <p>E-commerce</p>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+           </a>
+
+           <a href="https://jhonnysota.github.io/GIFexpertapp/" target="_blank">
+               <div class="proyecto">
+                   <img src="img/gitExpert.png"    alt="">
+                   <div class="overlay">
+                       <h3>Git Exprert</h3>
+                       <p> Buscador de  Gif</p>
                     </div>
                 </div>
+            </a>
+            <a href="https://ralitech.pe" target="_blank">
                 <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
+                    <img src="img/ralitech.png" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Ralitech</h3>
+                        <p>Pagina principal</p>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
+            </a>
+            
             </div>
         </div>
     </section>
@@ -359,12 +446,12 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                    <input type="text" placeholder="Tú Nombre" id="nombre">
+                    <input type="text" placeholder="Número telefónico" id="telefono">
+                    <input type="text" placeholder="Dirección de correo" id="correo">
+                    <input type="text" placeholder="Tema" id="tema">
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje" ></textarea>
+                    <button onclick="enviarCorreo()">
                         Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
@@ -376,15 +463,15 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
+                                Peru , Lima, San martinde porres
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
+                                Llamanos: +51 942223465 
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
+                                Email: jhonnysota67@gmail.com 
                             </li>
                         </ul>
                     </div>
@@ -399,12 +486,12 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100001123840740" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/jhonnysota"><i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/jhonny-sota-bautista-21288314b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+51942223465&text=Hola%20acabo%20de%20ver%20tu%20pagina,%20y%20deseo%20trabajar%20contigo."><i class="fa-brands fa-whatsapp"></i></a>
         </div>
+        <p>Creado por jhonny sota</p>
     </footer>
 
     <script src="script.js"></script>

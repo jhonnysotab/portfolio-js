@@ -68,7 +68,7 @@ html{
 .inicio .contenido-banner{
     padding: 20px;
     background-color: #1e2326;
-    max-width: 350px;
+    max-width: 360px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -77,7 +77,7 @@ html{
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
-    width: 80%;
+    width: 50%;
     margin: auto;
     border-radius: 100%;
 }
@@ -163,7 +163,7 @@ html{
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
-}
+}   
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
     height: 100px;
@@ -287,58 +287,58 @@ html{
     100%{width: 89%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .reactJS{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s reactJS forwards;
 }
-@keyframes photoshop {
+@keyframes reactJS {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 75%;}
 }
 
-.skills .skill .wordpress{
+.skills .skill .Java8{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s Java8 forwards;
 }
-@keyframes wordpress {
+@keyframes Java8 {
     0%{width: 0%;}
     100%{width: 81%;}
 }
 
-.skills .skill .drupal{
+.skills .skill .MySQL{
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 2s MySQL forwards;
 }
-@keyframes drupal {
+@keyframes MySQL {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 65%;}
 }
 
-.skills .skill .comunicacion{
+.skills .skill .SQLserver{
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 2s SQLserver forwards;
 }
-@keyframes comunicacion {
+@keyframes SQLserver {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 65%;}
 }
 
-.skills .skill .trabajo{
+.skills .skill .Booststrap{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 2s Booststrap forwards;
 }
-@keyframes trabajo {
+@keyframes Booststrap {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 65%;}
 }
 
-.skills .skill .creatividad{
+.skills .skill .AWS{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 2s AWS forwards;
 }
-@keyframes creatividad {
+@keyframes AWS {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 35%;}
 }
 
 .skills .skill .dedicacion{
@@ -357,6 +357,45 @@ html{
 @keyframes proyect {
     0%{width: 0%;}
     100%{width: 94%;}
+}
+
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .pm{
+    width: 0%;
+    animation: 2s pm forwards;
+}
+@keyframes pm {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 95%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
